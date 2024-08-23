@@ -1,0 +1,23 @@
+version: '3'
+services:  
+  app:    
+    build: .    
+    ports:      
+      - "8080:8080"    
+    depends_on:      
+      - db    
+    environment:      
+      - DB_HOST=db      
+      - DB_USER=root      
+      - DB_PASSWORD=password      
+      - DB_NAME=hospital  
+  db:    
+    image: mysql:8    
+    environment:      
+      - MYSQL_ROOT_PASSWORD=password      
+      - MYSQL_DATABASE=hospital    
+    volumes:      
+      - dbdata:/var/lib/mysql
+      
+volumes:  
+  dbdata:

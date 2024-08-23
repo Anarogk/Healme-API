@@ -1,0 +1,38 @@
+# Build artifacts
+/build/
+/dist/
+/bin/
+
+# Generated files
+*.so
+*.dylib
+*.dll
+*.a
+*.o
+*.pyc
+*.pyo
+*.pyd
+*.egg-info
+*.egg
+*__pycache__/
+
+# IDE-specific files
+*.swp
+*.DS_Store
+.vscode/
+.idea/
+.project
+.csproj
+.sln
+.suo
+
+# Logs and cache files
+logs/
+cache/
+tmp/
+
+# Vendor directories (if using Go modules)
+/vendor/
+
+# Git-specific files
+.git/
