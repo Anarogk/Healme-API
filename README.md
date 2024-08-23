@@ -1,5 +1,4 @@
 
-
 # 🏥 HealthTech Wizardry API 🧙‍♂️
 
 Welcome to the most magical healthcare API this side of Hogwarts! We've combined the healing powers of Go with the sorcery of modern web technologies to create an API so powerful, it might just cure the common cold (disclaimer: it won't).
@@ -22,23 +21,26 @@ Welcome to the most magical healthcare API this side of Hogwarts! We've combined
 ### Installation
 
 1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/healthtech-wizardry-api.git
-   ```
+```sh
+   git clone https://github.com/Anarogk/healme-API.git
+```
+
 2. Enter the magical directory:
-   ```bash
-   cd healthtech-wizardry-api
-   ```
+```sh
+   cd healme-API
+```
+
 3. Cast the spell of dependency installation:
-   ```bash
+```sh
    go mod tidy
-   ```
+```
+
 4. Create a `.env` file and fill it with your secret incantations (database credentials, JWT secret, etc.)
 
 5. Wave your wand (or just type in your terminal):
-   ```bash
+```sh
    go run cmd/server/main.go
-   ```
+```
 
 Congratulations! Your API is now running faster than a Nimbus 2000!
 
@@ -47,9 +49,10 @@ Congratulations! Your API is now running faster than a Nimbus 2000!
 ### Authentication Spells 🔐
 
 #### Register a New User
-```bash
+```sh
 POST /api/register
 ```
+
 Body:
 ```json
 {
@@ -60,9 +63,10 @@ Body:
 ```
 
 #### Login
-```bash
+```sh
 POST /api/login
 ```
+
 Body:
 ```json
 {
@@ -74,43 +78,44 @@ Body:
 ### Patient Charms 🧑‍⚕️
 
 #### Get All Patients
-```bash
+```sh
 GET /api/patients
 ```
 
 #### Get Single Patient
-```bash
+```sh
 GET /api/patients/:id
 ```
 
 #### Update Patient
-```bash
+```sh
 PUT /api/patients/:id
 ```
 
 ### Doctor Enchantments 👩‍⚕️
 
 #### Get All Doctors
-```bash
+```sh
 GET /api/doctors
 ```
 
 #### Get Single Doctor
-```bash
+```sh
 GET /api/doctors/:id
 ```
 
 #### Update Doctor
-```bash
+```sh
 PUT /api/doctors/:id
 ```
 
 ### Appointment Alchemy ⏰
 
 #### Create Appointment
-```bash
+```sh
 POST /api/appointments
 ```
+
 Body:
 ```json
 {
@@ -122,17 +127,17 @@ Body:
 ```
 
 #### Get All Appointments
-```bash
+```sh
 GET /api/appointments
 ```
 
 #### Update Appointment
-```bash
+```sh
 PUT /api/appointments/:id
 ```
 
 #### Delete Appointment
-```bash
+```sh
 DELETE /api/appointments/:id
 ```
 
@@ -182,16 +187,17 @@ DELETE /api/appointments/:id
 
 Run tests faster than Snape takes points from Gryffindor:
 
-```bash
+```sh
 go test ./...
 ```
 
 ## 🚢 Deployment
 
 1. Summon a Docker container:
-   ```bash
+```sh
    docker-compose up --build
-   ```
+```
+
 2. Deploy to the cloud using Vercel, because even APIs need a little magic in the sky.
 
 ## 🧙‍♂️ Contributing
@@ -201,4 +207,5 @@ Contributions are welcome! Just make sure your code is cleaner than Filch's mop 
 ## 📜 License
 
 This project is licensed under the Spell-It-Yourself License. Use it wisely, and may your code always compile on the first try!
+
 
