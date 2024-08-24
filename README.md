@@ -118,11 +118,11 @@ DELETE /api/appointments/:id
 
 ## 📊 Schema Flowchart
 
-![Schema](flowchart.png)
+![Schema](./Flowchart.png)
 <!--+----------------+       +----------------+
 <!--|     Users      |       |   Patients     |
 <!--+----------------+       +----------------+
-<!--| id             |------>| id             |
+<!--| id             |------><!--| id             |
 <!--| email          |       | user_id        |
 <!--| password       |       | first_name     |
 <!--| role           |       | last_name      |
@@ -137,7 +137,7 @@ DELETE /api/appointments/:id
                          +----------------+
                          |   Doctors      |
                          +----------------+
-                         | id             |
+                        <!-- | id             |
                          | user_id        |
                          | first_name     |
                          | last_name      |
@@ -149,7 +149,7 @@ DELETE /api/appointments/:id
                          +----------------+
                          | Appointments   |
                          +----------------+
-                         | id             |
+                        <!-- | id             |
                          | patient_id     |
                          | doctor_id      |
                          | date_time      |
