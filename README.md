@@ -18,31 +18,6 @@ Welcome to the most magical healthcare API this side of Hogwarts! We've combined
 - PostgreSQL (because even wizards need reliable databases)
 - A sense of humor (critical for debugging)
 
-### Installation
-
-1. Clone the repo:
-```sh
-   git clone https://github.com/Anarogk/healme-API.git
-```
-
-2. Enter the magical directory:
-```sh
-   cd healme-API
-```
-
-3. Cast the spell of dependency installation:
-```sh
-   go mod tidy
-```
-
-4. Create a `.env` file and fill it with your secret incantations (database credentials, JWT secret, etc.)
-
-5. Wave your wand (or just type in your terminal):
-```sh
-   go run cmd/server/main.go
-```
-
-Congratulations! Your API is now running faster than a Nimbus 2000!
 
 ## 🧙‍♀️ API Documentation
 
@@ -143,19 +118,19 @@ DELETE /api/appointments/:id
 
 ## 📊 Schema Flowchart
 
-```
-+----------------+       +----------------+
-|     Users      |       |   Patients     |
-+----------------+       +----------------+
-| id             |------>| id             |
-| email          |       | user_id        |
-| password       |       | first_name     |
-| role           |       | last_name      |
-+----------------+       | date_of_birth  |
-                         | gender         |
-                         | phone_number   |
-                         | address        |
-                         +----------------+
+![Schema](../assets/schema.png)
+<!--+----------------+       +----------------+
+<!--|     Users      |       |   Patients     |
+<!--+----------------+       +----------------+
+<!--| id             |------>| id             |
+<!--| email          |       | user_id        |
+<!--| password       |       | first_name     |
+<!--| role           |       | last_name      |
+<!--+----------------+       | date_of_birth  |
+                             | gender         |
+                             | phone_number   |
+                             | address        |
+                             +----------------+
                                  ^
                                  |
                                  |
@@ -181,7 +156,7 @@ DELETE /api/appointments/:id
                          | description    |
                          | status         |
                          +----------------+
-```
+-->
 
 ## 🧪 Testing
 
