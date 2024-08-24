@@ -118,7 +118,7 @@ DELETE /api/appointments/:id
 
 ## 📊 Schema Flowchart
 
-![Schema](../assets/schema.png)
+![Schema](flowchart.png)
 <!--+----------------+       +----------------+
 <!--|     Users      |       |   Patients     |
 <!--+----------------+       +----------------+
